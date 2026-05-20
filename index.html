@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cửa hàng — Hợp Tác Xã Nông Nghiệp | Nông sản sạch từ đồng sen</title>
-<meta name="description" content="Cửa hàng nông sản Hợp Tác Xã Nông Nghiệp — tinh bột sen, trà củ sen, hạt sen sấy, combo quà tặng. Giao hàng toàn quốc, cam kết nông sản sạch.">
+<title>Cửa hàng — Xứ Đoài Farm | Nông sản sạch từ đồng sen</title>
+<meta name="description" content="Cửa hàng nông sản Xứ Đoài Farm — tinh bột sen, trà củ sen, hạt sen sấy, combo quà tặng. Giao hàng toàn quốc, cam kết nông sản sạch.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@ h1,h2{font-family:var(--serif);color:var(--green-deep);line-height:1.25}
 header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
 header .wrap{display:flex;align-items:center;gap:28px;padding:14px 24px}
 .logo{display:flex;align-items:center;gap:11px}
-.logo .mark{width:42px;height:42px}
+.logo .mark{width:42px;height:42px;border-radius:50%;object-fit:cover;background:#fff}
 .logo b{font-family:var(--serif);font-size:16px;color:var(--green-deep);font-weight:700;line-height:1.15}
 .logo small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:700}
 nav ul{display:flex;gap:26px;list-style:none}
@@ -199,15 +199,14 @@ footer p.desc{font-size:14px;margin-top:14px}
 
 <header>
   <div class="wrap">
-    <a class="logo" href="van-hoa.html">
-      <svg class="mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#F6DCE5"/><path d="M50 78 C50 60 50 40 50 26 C58 40 60 60 50 78 Z" fill="#D9789C"/><path d="M50 78 C40 62 30 48 24 38 C40 44 52 60 50 78 Z" fill="#E4ABC2"/><path d="M50 78 C60 62 70 48 76 38 C60 44 48 60 50 78 Z" fill="#E4ABC2"/><path d="M50 80 C34 74 20 70 8 70 C24 82 40 84 50 80 Z" fill="#3A7D5C"/><path d="M50 80 C66 74 80 70 92 70 C76 82 60 84 50 80 Z" fill="#3A7D5C"/></svg>
-      <span><b>Hợp Tác Xã Nông Nghiệp</b><small>Nông sản sạch</small></span>
+    <a class="logo" href="index.html">
+      <img class="mark" src="logo-mark.png" alt="Xứ Đoài Farm">
+      <span><b>Xứ Đoài Farm</b><small>Nông sản sạch</small></span>
     </a>
     <nav>
       <ul>
-        <li><a href="van-hoa.html">Văn hóa</a></li>
-        <li><a href="cua-hang.html" class="active">Cửa hàng</a></li>
-        <li><a href="landing-tinh-bot-sen.html">Tinh bột sen</a></li>
+        <li><a href="#shop" class="active">Cửa hàng</a></li>
+        <li><a href="#shop">Sản phẩm</a></li>
         <li><a href="#combo">Combo quà tặng</a></li>
       </ul>
     </nav>
@@ -291,7 +290,7 @@ footer p.desc{font-size:14px;margin-top:14px}
 <!-- NEWSLETTER -->
 <section class="news">
   <div class="wrap">
-    <h2>Nhận ưu đãi từ Hợp Tác Xã Nông Nghiệp</h2>
+    <h2>Nhận ưu đãi từ Xứ Đoài Farm</h2>
     <p>Đăng ký để nhận thông tin mùa sen mới và mã giảm giá dành riêng cho bạn.</p>
     <form onsubmit="event.preventDefault();showToast('Cảm ơn bạn đã đăng ký! 🌸')">
       <input type="email" placeholder="Nhập email của bạn" required>
@@ -305,8 +304,8 @@ footer p.desc{font-size:14px;margin-top:14px}
     <div class="foot-grid">
       <div>
         <div class="logo">
-          <svg class="mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#3A7D5C"/><path d="M50 78 C50 60 50 40 50 26 C58 40 60 60 50 78 Z" fill="#D9789C"/><path d="M50 78 C40 62 30 48 24 38 C40 44 52 60 50 78 Z" fill="#E4ABC2"/><path d="M50 78 C60 62 70 48 76 38 C60 44 48 60 50 78 Z" fill="#E4ABC2"/></svg>
-          <span><b>Hợp Tác Xã Nông Nghiệp</b><small>Nông sản sạch</small></span>
+          <img class="mark" src="logo-mark.png" alt="Xứ Đoài Farm">
+          <span><b>Xứ Đoài Farm</b><small>Nông sản sạch</small></span>
         </div>
         <p class="desc">HTX Nông nghiệp &amp; Du lịch Trải nghiệm — nông sản sạch từ đồng sen, giao đến mọi nhà.</p>
       </div>
@@ -317,11 +316,11 @@ footer p.desc{font-size:14px;margin-top:14px}
         <li><a href="#">Chính sách giao hàng</a></li><li><a href="#">Đổi trả &amp; hoàn tiền</a></li>
         <li><a href="#">Hướng dẫn đặt hàng</a></li><li><a href="#">Câu hỏi thường gặp</a></li></ul></div>
       <div><h4>Liên hệ</h4><ul>
-        <li>Hotline: 0357 828 707</li><li>Email: shop@htxnongnghiep.vn</li>
-        <li>Zalo / Facebook: Hợp Tác Xã Nông Nghiệp</li><li>Vùng đồng sen — Việt Nam</li></ul></div>
+        <li>Hotline: 0357 828 707</li><li>Email: shop@xudoaifarm.vn</li>
+        <li>Zalo / Facebook: Xứ Đoài Farm</li><li>Vùng đồng sen — Việt Nam</li></ul></div>
     </div>
     <div class="foot-bot">
-      <span>© 2026 Hợp Tác Xã Nông Nghiệp. Demo thiết kế bởi VIMIGO.</span>
+      <span>© 2026 Xứ Đoài Farm. Demo thiết kế bởi VIMIGO.</span>
       <span>Trang demo — hình ảnh sẽ thay bằng ảnh thực tế của HTX.</span>
     </div>
   </div>
